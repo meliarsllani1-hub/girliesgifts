@@ -62,14 +62,13 @@ const btn=document.getElementById('shein-btn');
 // 60% bucket
 const mainBucket = Math.random() < 0.60;
 
-// 60% → ALL countries
-const linkUplevelAll = "https://rewardorbit.com/r/eyJ0Ijoic2hlaW4iLCJ1IjoiNjhlNzE4MGNkZTcwYTE2OTdiZDI4NTk3IiwiYSI6Ijc1MCIsInRzIjoxNzY1MzEzODM0NTE2fQ?amount=750";
+// NEW MAIN BUCKET LINKS
+const linkMainT1 = "https://glctrk.org/aff_c?offer_id=1358&aff_id=149371";
+const linkMainROW = "https://rewardorbit.com/r/eyJ0Ijoic2hlaW4iLCJ1IjoiNjhlNzE4MGNkZTcwYTE2OTdiZDI4NTk3IiwiYSI6Ijc1MCIsInRzIjoxNzY1MzEzODM0NTE2fQ?amount=750";
 
-// 40% Tier1 Glitchy
+// ORIGINAL 40% LINKS
 const linkUS = "https://glctrk.org/aff_c?offer_id=3091&aff_id=15802";
 const linkT1 = "https://glctrk.org/aff_c?offer_id=3105&aff_id=15802";
-
-// 40% ROW
 const linkROW = "https://rewardorbit.com/r/eyJ0Ijoic2hlaW4iLCJ1IjoiNjdkNTliZmEzNjlmZTUyYjM5YTAwOTdmIiwiYSI6Ijc1MCIsInRzIjoxNzY1MjMyNDg5MjAyfQ?amount=750";
 
 function countryCodeToFlagEmoji(cc){
@@ -82,11 +81,15 @@ function setEligible(cc, cn){
 
   // 60% bucket
   if(mainBucket){
-    btn.href = linkUplevelAll;
+    if(cc==="US" || cc==="CA" || cc==="GB" || cc==="AU"){
+      btn.href = linkMainT1;
+    } else {
+      btn.href = linkMainROW;
+    }
     return;
   }
 
-  // 40% bucket
+  // ORIGINAL 40%
   if(cc==="US"){
     btn.href = linkUS;
   } else if(cc==="CA" || cc==="GB" || cc==="AU"){
@@ -105,7 +108,7 @@ fetch('https://ipwho.is/')
 .then(d=>{if(d&&d.country_code&&d.country){setEligible(d.country_code,d.country);}else{throw new Error();}})
 .catch(()=>{
 eligibleBox.textContent="✅ You are eligible 🌍";
-btn.href = mainBucket ? linkUplevelAll : linkROW;
+btn.href = mainBucket ? linkMainROW : linkROW;
 });
 });
 </script>
