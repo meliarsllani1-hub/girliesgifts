@@ -10,118 +10,26 @@
 <link crossorigin href="https://i.postimg.cc" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet"/>
 
+<!-- ✅ Umami Analytics (NEW DOMAIN) -->
+<script
+  defer
+  src="https://cloud.umami.is/script.js"
+  data-website-id="2875d3d9-c203-43fe-b9ac-12b68848cc31">
+</script>
+
 <style>
-body {
-  background:#fff;
-  margin:0;
-  font-family:'Montserrat',sans-serif;
-  color:#000;
-}
-
-.steps-box {
-  color:#000;
-  padding:20px;
-  font-size:17px;
-  text-align:center;
-  line-height:1.6;
-  max-width:500px;
-  margin:20px auto;
-  box-sizing:border-box;
-}
-
-.steps-box p {margin:16px 0;}
-
-.shein-btn {
-  background:#ff66b2;
-  color:#fff;
-  padding:14px 20px;
-  font-size:15px;
-  border:2px solid #fff;
-  cursor:pointer;
-  display:flex;
-  align-items:center;
-  justify-content:flex-start;
-  border-radius:50px;
-  font-family:'Montserrat',sans-serif;
-  width:100%;
-  max-width:500px;
-  margin:6px auto 14px auto;
-  box-sizing:border-box;
-  transition:transform 0.2s;
-  white-space:nowrap;
-  overflow:hidden;
-  text-overflow:ellipsis;
-  animation:sheinPulse 2.2s infinite;
-  text-decoration:none;
-}
-
-.shein-btn:hover {transform:scale(1.05);}
-
-@keyframes sheinPulse {
-  0% {box-shadow:0 0 0 0 rgba(255,102,178,0.35);}
-  70% {box-shadow:0 0 0 10px rgba(255,102,178,0);}
-  100% {box-shadow:0 0 0 0 rgba(255,102,178,0);}
-}
-
-.text-container span:first-child {
-  font-size:16px;
-  font-weight:500;
-}
-
-.subtext {
-  font-size:11px;
-  margin-top:4px;
-  opacity:0.9;
-}
-
-.eligible-box {
-  background:#ffffff;
-  max-width:500px;
-  margin:10px auto 0;
-  padding:10px 14px;
-  font-size:13px;
-  text-align:center;
-  color:#333;
-  border-radius:12px;
-  border:1px solid #eee;
-  box-shadow:0 1px 6px rgba(0,0,0,0.04);
-  font-weight:500;
-  min-height:38px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-}
-
-.trust-text {
-  text-align:center;
-  font-size:12px;
-  color:#888;
-  margin-top:12px;
-  margin-bottom:0;
-  font-weight:500;
-  max-width:500px;
-  margin-left:auto;
-  margin-right:auto;
-}
-
-.proof-headline {
-  font-size:18px;
-  font-weight:700;
-  color:#222;
-  text-align:center;
-  margin-top:48px;
-  margin-bottom:16px;
-}
-
-.proof-image {
-  width:100%;
-  max-width:400px;
-  border-radius:10px;
-  display:block;
-  margin:0 auto 20px auto;
-  box-shadow:0 6px 24px rgba(0,0,0,0.11);
-  background:#f8f8f8;
-}
+body{background:#fff;margin:0;font-family:'Montserrat',sans-serif;color:#000;}
+.steps-box{color:#000;padding:20px;font-size:17px;text-align:center;line-height:1.6;max-width:500px;margin:20px auto;box-sizing:border-box;}
+.steps-box p{margin:16px 0;}
+.shein-btn{background:#ff66b2;color:#fff;padding:14px 20px;font-size:15px;border:2px solid #fff;cursor:pointer;display:flex;align-items:center;justify-content:flex-start;border-radius:50px;font-family:'Montserrat',sans-serif;width:100%;max-width:500px;margin:6px auto 14px auto;box-sizing:border-box;transition:transform 0.2s;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;animation:sheinPulse 2.2s infinite;text-decoration:none;}
+.shein-btn:hover{transform:scale(1.05);}
+@keyframes sheinPulse{0%{box-shadow:0 0 0 0 rgba(255,102,178,0.35);}70%{box-shadow:0 0 0 10px rgba(255,102,178,0);}100%{box-shadow:0 0 0 0 rgba(255,102,178,0);}}
+.text-container span:first-child{font-size:16px;font-weight:500;}
+.subtext{font-size:11px;margin-top:4px;opacity:0.9;}
+.eligible-box{background:#ffffff;max-width:500px;margin:10px auto 0;padding:10px 14px;font-size:13px;text-align:center;color:#333;border-radius:12px;border:1px solid #eee;box-shadow:0 1px 6px rgba(0,0,0,0.04);font-weight:500;min-height:38px;display:flex;align-items:center;justify-content:center;}
+.trust-text{text-align:center;font-size:12px;color:#888;margin-top:12px;margin-bottom:0;font-weight:500;max-width:500px;margin-left:auto;margin-right:auto;}
+.proof-headline{font-size:18px;font-weight:700;color:#222;text-align:center;margin-top:48px;margin-bottom:16px;}
+.proof-image{width:100%;max-width:400px;border-radius:10px;display:block;margin:0 auto 20px auto;box-shadow:0 6px 24px rgba(0,0,0,0.11);background:#f8f8f8;}
 </style>
 </head>
 
@@ -143,7 +51,13 @@ body {
   <p>4. Claim Your Gift Card!</p>
 </div>
 
-<a href="#" id="shein-btn" class="shein-btn">
+<!-- ✅ CTR tracked CTA -->
+<a
+  href="#"
+  id="shein-btn"
+  class="shein-btn"
+  data-umami-event="offer-click"
+>
   <img src="https://i.postimg.cc/zBfxrrSy/c5910bd5-e5b2-4c70-b124-9560d8cbf698-link-in-bio-links-block-home-2af2051e-f17c-4f49-8af7-1eac99.webp"
        style="width:45px;height:45px;margin-right:12px;border-radius:50%;" />
   <div class="text-container" style="flex-grow:1;display:flex;flex-direction:column;align-items:flex-start;margin-left:25px;">
@@ -160,63 +74,52 @@ body {
 <img class="proof-image" src="https://i.postimg.cc/3NWCSpDv/upscalemedia-transformed-1.jpg"/>
 
 <script>
-const eligibleBox = document.getElementById('eligible-box');
-const btn = document.getElementById('shein-btn');
+const eligibleBox=document.getElementById('eligible-box');
+const btn=document.getElementById('shein-btn');
 
-const mainBucket = Math.random() < 0.60;
+const mainBucket=Math.random()<0.60;
 
-const linkMainT1 = "https://glctrk.org/aff_c?offer_id=1358&aff_id=149371";
-const linkMainROW = "https://rewardorbit.com/r/eyJ0Ijoic2hlaW4iLCJ1IjoiNjhlNzE4MGNkZTcwYTE2OTdiZDI4NTk3IiwiYSI6Ijc1MCIsInRzIjoxNzY1MzEzODM0NTE2fQ?amount=750";
+const linkMainT1="https://glctrk.org/aff_c?offer_id=1358&aff_id=149371";
+const linkMainROW="https://rewardorbit.com/r/eyJ0Ijoic2hlaW4iLCJ1IjoiNjhlNzE4MGNkZTcwYTE2OTdiZDI4NTk3IiwiYSI6Ijc1MCIsInRzIjoxNzY1MzEzODM0NTE2fQ?amount=750";
 
-const linkUS = "https://glctrk.org/aff_c?offer_id=3091&aff_id=15802";
-const linkT1 = "https://glctrk.org/aff_c?offer_id=3105&aff_id=15802";
-const linkROW = "https://rewardorbit.com/r/eyJ0Ijoic2hlaW4iLCJ1IjoiNjdkNTliZmEzNjlmZTUyYjM5YTAwOTdmIiwiYSI6Ijc1MCIsInRzIjoxNzY1MjMyNDg5MjAyfQ?amount=750";
+const linkUS="https://glctrk.org/aff_c?offer_id=3091&aff_id=15802";
+const linkT1="https://glctrk.org/aff_c?offer_id=3105&aff_id=15802";
+const linkROW="https://rewardorbit.com/r/eyJ0Ijoic2hlaW4iLCJ1IjoiNjdkNTliZmEzNjlmZTUyYjM5YTAwOTdmIiwiYSI6Ijc1MCIsInRzIjoxNzY1MjMyNDg5MjAyfQ?amount=750";
 
 function countryCodeToFlagEmoji(cc){
-  if(!cc || cc.length !== 2) return "";
-  return String.fromCodePoint(...[...cc.toUpperCase()].map(c => 127397 + c.charCodeAt()));
+  if(!cc||cc.length!==2)return"";
+  return String.fromCodePoint(...[...cc.toUpperCase()].map(c=>127397+c.charCodeAt()));
 }
 
-function setEligible(cc, cn){
-  eligibleBox.textContent = `✅ You are eligible – ${cn} ${countryCodeToFlagEmoji(cc)}`;
+function setEligible(cc,cn){
+  eligibleBox.textContent=`✅ You are eligible – ${cn} ${countryCodeToFlagEmoji(cc)}`;
 
   if(mainBucket){
-    if(cc==="US" || cc==="CA" || cc==="GB" || cc==="AU"){
-      btn.href = linkMainT1;
+    if(cc==="US"||cc==="CA"||cc==="GB"||cc==="AU"){
+      btn.href=linkMainT1;
     } else {
-      btn.href = linkMainROW;
+      btn.href=linkMainROW;
     }
     return;
   }
 
   if(cc==="US"){
-    btn.href = linkUS;
-  } else if(cc==="CA" || cc==="GB" || cc==="AU"){
-    btn.href = linkT1;
+    btn.href=linkUS;
+  } else if(cc==="CA"||cc==="GB"||cc==="AU"){
+    btn.href=linkT1;
   } else {
-    btn.href = linkROW;
+    btn.href=linkROW;
   }
 }
 
 fetch('https://ipapi.co/json/')
-.then(r => r.ok ? r.json() : Promise.reject())
-.then(d => {
-  if(d && d.country && d.country_name){
-    setEligible(d.country, d.country_name);
-  } else { throw new Error(); }
-})
-.catch(() => {
+.then(r=>r.ok?r.json():Promise.reject())
+.then(d=>{if(d&&d.country&&d.country_name)setEligible(d.country,d.country_name);else throw 0;})
+.catch(()=>{
   fetch('https://ipwho.is/')
-  .then(r => r.ok ? r.json() : Promise.reject())
-  .then(d => {
-    if(d && d.country_code && d.country){
-      setEligible(d.country_code, d.country);
-    } else { throw new Error(); }
-  })
-  .catch(() => {
-    eligibleBox.textContent = "✅ You are eligible 🌍";
-    btn.href = mainBucket ? linkMainROW : linkROW;
-  });
+  .then(r=>r.ok?r.json():Promise.reject())
+  .then(d=>{if(d&&d.country_code&&d.country)setEligible(d.country_code,d.country);else throw 0;})
+  .catch(()=>{eligibleBox.textContent="✅ You are eligible 🌍";btn.href=mainBucket?linkMainROW:linkROW;});
 });
 </script>
 
